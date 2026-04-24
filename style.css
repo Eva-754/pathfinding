@@ -1,0 +1,43 @@
+.cell {
+    width: 25px;
+    height: 25px;
+    border: 1px solid gray;
+    display: inline-block;
+}
+
+/* start node */
+.start {
+    background-color: green;
+}
+
+/* goal node */
+.end {
+    background-color: red;
+}
+
+/* wall (blocked cell) */
+.wall {
+    background-color: black;
+}
+
+/* visited by BFS */
+.visit {
+    background-color: lightgreen;
+}
+
+/* final shortest path */
+.path {
+    background-color: lightcoral;
+}
+/* main grid container */
+#grid {
+    display: grid;
+
+    /* 10 columns = square grid */
+    grid-template-columns: repeat(10, 25px);
+
+    /* automatically create rows */
+    grid-auto-rows: 25px;
+
+    gap: 2px; /* space between cells */
+}
